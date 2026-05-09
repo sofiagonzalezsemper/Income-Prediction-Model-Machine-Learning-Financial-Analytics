@@ -35,3 +35,7 @@ El objetivo fue minimizar el error relativo del modelo mediante técnicas de fea
 - El feature engineering mejoró significativamente la performance respecto al baseline inicial.
 - Los modelos basados en boosting mostraron mejor capacidad predictiva que modelos tradicionales.
 
+## Results
+
+<img width="1246" height="447" alt="Datatgon" src="https://github.com/user-attachments/assets/e4f54cd1-4326-40e6-9587-a8fbb967fae9" />
+
