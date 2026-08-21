@@ -1,41 +1,57 @@
-Proyecto de machine learning enfocado en la predicción de ingresos mensuales utilizando variables financieras, crediticias y de comportamiento.
+# Income Prediction Model
 
-El objetivo fue minimizar el error relativo del modelo mediante técnicas de feature engineering, validación y optimización de hiperparámetros.
+Proyecto de machine learning orientado a estimar ingresos mensuales a partir de variables financieras, crediticias y de comportamiento.
 
-## Tools & Technologies
+## Objetivo
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- CatBoost
-- XGBoost
-- Optuna
-- Machine Learning
+Construir y comparar modelos de regresión que minimicen el error relativo, manteniendo un proceso trazable de limpieza, feature engineering, validación y optimización.
 
-## Project Pipeline
+## Flujo de trabajo
 
-1. Data cleaning and preprocessing
-2. Exploratory data analysis
-3. Feature engineering
-4. Model training
-5. Cross-validation
-6. Hyperparameter tuning
-7. Model evaluation and interpretation
+1. Auditoría y limpieza de datos.
+2. Análisis exploratorio.
+3. Preparación de variables numéricas y categóricas.
+4. Construcción de un baseline.
+5. Feature engineering.
+6. Comparación de modelos.
+7. Validación cruzada y tuning.
+8. Evaluación e interpretación del modelo seleccionado.
 
-## Business Questions
+## Tecnologías
 
-- ¿Qué variables financieras tienen mayor impacto en la predicción de ingresos?
-- ¿Cómo mejorar la precisión predictiva minimizando el error relativo?
-- ¿Qué patrones crediticios se relacionan con distintos niveles de ingresos?
+`Python` · `Pandas` · `NumPy` · `scikit-learn` · `CatBoost` · `XGBoost` · `Optuna`
 
-## Key Insights
+## Hallazgos principales
 
-- Las variables relacionadas con deuda vigente y comportamiento crediticio tuvieron alta relevancia predictiva.
-- El feature engineering mejoró significativamente la performance respecto al baseline inicial.
-- Los modelos basados en boosting mostraron mejor capacidad predictiva que modelos tradicionales.
+- Las variables de deuda y comportamiento crediticio aportaron información predictiva relevante.
+- El feature engineering mejoró el resultado frente al baseline.
+- Los modelos de boosting ofrecieron mejor desempeño que las alternativas tradicionales evaluadas.
 
-## Results
+Las métricas, la comparación completa y el procedimiento de validación se encuentran en el notebook para evitar presentar resultados sin su contexto experimental.
 
-<img width="1246" height="447" alt="Datatgon" src="https://github.com/user-attachments/assets/e4f54cd1-4326-40e6-9587-a8fbb967fae9" />
+## Contenido del repositorio
 
+- [Notebook del proyecto](./income-prediction-model.ipynb)
+- `train.csv`: conjunto utilizado para entrenamiento y validación.
+- `test.csv`: conjunto reservado para predicción/evaluación según el flujo documentado.
+
+## Resultado
+
+![Resultado del modelo](https://github.com/user-attachments/assets/e4f54cd1-4326-40e6-9587-a8fbb967fae9)
+
+## Limitaciones
+
+- El modelo identifica asociaciones predictivas; no demuestra relaciones causales.
+- Su uso sobre una población diferente requiere validación de estabilidad y drift.
+- Para un entorno productivo se necesitarían controles de calidad, versionado de datos y monitoreo.
+
+## Próximas mejoras
+
+- Publicar un archivo de dependencias con versiones.
+- Separar preparación, entrenamiento e inferencia en módulos.
+- Incorporar una tabla resumida de métricas y un análisis formal de errores.
+- Agregar un diccionario de variables y la fuente/licencia del dataset.
+
+## Autora
+
+**Sofía González Semper** — Data Analytics, operaciones y mejora de procesos.
